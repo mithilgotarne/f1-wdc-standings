@@ -9,7 +9,9 @@ Dynamic Video Generator based on WDC standings
 - run `python3 demo.py`
 - output will be generated as `out.mp4`
 
+## Usage:
 
+- run after every race weekend :)
 
 ## Sample Output:
 
