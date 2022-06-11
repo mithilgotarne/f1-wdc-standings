@@ -24,7 +24,7 @@ res.reverse()
 res = [VideoFileClip('media/videos/start.mov')] + res + [VideoFileClip('media/videos/end.mov')]
 
 out: VideoClip = concatenate_videoclips(res)
+out = out.resize(height=480)
 out = out.set_audio(src_audio) 
 
-out.write_videofile("out.mp4", codec='libx264', audio_codec='aac',
-                    temp_audiofile='temp-audio.m4a', remove_temp=True)
+out.write_videofile("out.mp4", codec='libx264', remove_temp=True)
