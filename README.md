@@ -15,5 +15,13 @@ Dynamic Video Generator based on WDC standings
 
 ## Sample Output:
 
+### Azerbaijan GP
+https://user-images.githubusercontent.com/12873874/173247096-fe4706cf-ed45-4ba4-98ef-5d645da8f2f7.mp4
+
+
+### Monoco GP
 https://user-images.githubusercontent.com/12873874/173205749-365d8ee9-e38f-42ea-9ad2-21888822e9c1.mp4
+
+
+
 
