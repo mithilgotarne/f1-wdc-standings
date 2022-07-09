@@ -1,23 +1,22 @@
 from moviepy.editor import *
-import random
-import requests
+from drivers import *
+
 import os
 
 src_audio = AudioFileClip("media/bg.m4a")
 
 res = []
 
-response = requests.get('https://ergast.com/api/f1/current/driverStandings.json')
-
-for driver in response.json()['MRData']['StandingsTable']['StandingsLists'][0]['DriverStandings']:
-
-    id = driver['Driver']['driverId']
+for id in get_wdc_standings():
 
     filename = 'media/videos/{}.mov'.format(id)
 
     if os.path.exists(filename):
 
         res += [VideoFileClip(filename)]
+
+if len(res) != 20:
+    raise SystemExit('[ERROR] No. of drivers should be 20')
 
 res.reverse()
 
