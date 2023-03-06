@@ -15,6 +15,5 @@ Dynamic Video Generator based on WDC standings
 
 ## Sample Output:
 
-https://github.com/mithilgotarne/f1-wdc-standings/raw/main/out.mp4
-
+https://youtu.be/JFb_TxflpVI
 
